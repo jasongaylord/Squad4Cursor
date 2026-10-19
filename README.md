@@ -77,4 +77,4 @@ s4c build
 
 ## License
 
-MIT — inspired by [bradygaster/squad](https://github.com/bradygaster/squad) (MIT). Clean-room Cursor adapters and tooling.
+This project is licensed under the [MIT License](LICENSE) — the same license used by [bradygaster/squad](https://github.com/bradygaster/squad). See [LICENSE](LICENSE) for the full text.
