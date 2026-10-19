@@ -1,0 +1,37 @@
+{
+  "universes": [
+    "flight"
+  ],
+  "assignments": [
+    {
+      "at": "2026-10-19T20:25:32.812Z",
+      "agent": "lead",
+      "displayName": "CAPCOM",
+      "theme": "flight"
+    },
+    {
+      "at": "2026-10-19T20:25:32.814Z",
+      "agent": "frontend",
+      "displayName": "EECOM",
+      "theme": "flight"
+    },
+    {
+      "at": "2026-10-19T20:25:32.814Z",
+      "agent": "backend",
+      "displayName": "FIDO",
+      "theme": "flight"
+    },
+    {
+      "at": "2026-10-19T20:25:32.814Z",
+      "agent": "tester",
+      "displayName": "GUIDO",
+      "theme": "flight"
+    },
+    {
+      "at": "2026-10-19T20:25:32.814Z",
+      "agent": "scribe",
+      "displayName": "INCO",
+      "theme": "flight"
+    }
+  ]
+}

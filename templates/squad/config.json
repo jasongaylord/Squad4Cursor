@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "runtime": "squad4cursor",
+  "modelProfile": "quality",
+  "createdBy": "s4c",
+  "compat": {
+    "bradySquad": true,
+    "cursor": true,
+    "copilot": true
+  },
+  "models": {},
+  "governance": {
+    "protectedPaths": [
+      ".squad/agents/",
+      ".squad/decisions.md",
+      ".squad/casting/"
+    ],
+    "reviewerLockout": true,
+    "requireDecisionInboxReview": true
+  },
+  "watch": {
+    "intervalMinutes": 10,
+    "stateBackend": "file",
+    "notifyLevel": "important"
+  },
+  "cursorHints": {
+    "modelGuidance": "quality: prefer stronger models for Lead/Tester review; balanced: mid-tier for implementers; economy: fast models for mechanical work."
+  }
+}

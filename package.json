@@ -1,0 +1,32 @@
+{
+  "name": "squad4cursor",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Cursor-native Squad orchestration with shared .squad/ state for Copilot/Cursor dual use",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @squad4cursor/sdk && npm run build -w @squad4cursor/cli",
+    "dev:link": "npm run build && npm link -w @squad4cursor/cli",
+    "test": "npm run test -w @squad4cursor/sdk && npm run test -w @squad4cursor/cli",
+    "lint": "npm run lint -w @squad4cursor/sdk && npm run lint -w @squad4cursor/cli"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jason-gaylord/Squad4Cursor"
+  },
+  "keywords": [
+    "cursor",
+    "squad",
+    "multi-agent",
+    "speckit",
+    "openspec",
+    "ai"
+  ]
+}

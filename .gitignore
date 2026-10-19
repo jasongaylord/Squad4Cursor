@@ -1,0 +1,16 @@
+node_modules/
+dist/
+packages/cli/templates/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+coverage/
+.turbo/
+*.tgz
+.squad/log/
+.squad/orchestration-log/
+samples/hello-squad/.squad/log/
+samples/hello-squad/.squad/orchestration-log/

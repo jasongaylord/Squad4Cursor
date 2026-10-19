@@ -1,0 +1,29 @@
+{
+  "names": {
+    "lead": {
+      "displayName": "CAPCOM",
+      "role": "Lead",
+      "theme": "flight"
+    },
+    "frontend": {
+      "displayName": "EECOM",
+      "role": "Frontend",
+      "theme": "flight"
+    },
+    "backend": {
+      "displayName": "FIDO",
+      "role": "Backend",
+      "theme": "flight"
+    },
+    "tester": {
+      "displayName": "GUIDO",
+      "role": "Tester",
+      "theme": "flight"
+    },
+    "scribe": {
+      "displayName": "INCO",
+      "role": "Scribe",
+      "theme": "flight"
+    }
+  }
+}

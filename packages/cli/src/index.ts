@@ -1,0 +1,15 @@
+export { createProgram, VERSION } from "./cli.js";
+export { initProject, type InitOptions, type InitResult } from "./init.js";
+export { getStatus, type StatusReport } from "./status.js";
+export { runDoctor, type DoctorReport, type DoctorFinding } from "./doctor.js";
+export { upgradeProject, type UpgradeResult } from "./upgrade.js";
+export { hireAgent, retireAgent, restoreAlumni } from "./hire.js";
+export { castTeam, setCastName } from "./casting.js";
+export { runNap } from "./nap.js";
+export { exportSquad, importSquad } from "./export-import.js";
+export { readConfig, setModelProfile, setAgentModel } from "./config.js";
+export { processInbox, recordLockout, listInbox } from "./governance.js";
+export { startWatch, watchHealth, requestWatchStop } from "./watch.js";
+export { triageIssues, workOnIssue } from "./github.js";
+export { ingestPrd, materializeBacklogIssues } from "./prd.js";
+export { pluginAdd, pluginList, upstreamAdd, upstreamSync } from "./plugins.js";

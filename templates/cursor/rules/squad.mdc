@@ -1,0 +1,31 @@
+---
+description: Squad4Cursor team orchestration when .squad/ is present — route work through the coordinator and shared team state.
+alwaysApply: true
+---
+
+# Squad4Cursor
+
+When a `.squad/` directory exists in the project root, treat this repo as a human-led multi-agent team.
+
+## Shared state (Copilot + Cursor)
+
+- Team state lives only in `.squad/` — never invent `.squad4cursor/` or parallel memory stores.
+- Read `team.md`, `routing.md`, and `decisions.md` before spawning specialists.
+- Preserve existing agent `history.md` and `decisions.md` content; append, do not wipe.
+- One runtime per session preferred (Cursor *or* Copilot) to avoid write races; git reconciles conflicts.
+
+## Coordinator behavior
+
+1. Understand the human request.
+2. Consult `.squad/routing.md` for who should work.
+3. Spawn specialists as **parallel Task/subagents** when work is independent.
+4. Each specialist loads **only** their `charter.md`, their `history.md`, and relevant slices of `decisions.md` — not other agents' histories.
+5. Enforce reviewer lockout: if Tester or Lead rejects work, a different agent fixes it.
+6. Ensure Scribe updates `.squad/log/`, `decisions.md`, and histories after meaningful work.
+7. Prefer the `squad-coordinator` skill for full orchestration instructions.
+
+## Spec-driven bridges
+
+- If `.specify/` exists, use the `squad-speckit` skill for SpecKit implementation.
+- If `openspec/` exists, use the `squad-openspec` skill for OpenSpec apply flows.
+- SpecKit `tasks.md` checkboxes or OpenSpec change `tasks.md` are the progress source for that path; also log decisions in `.squad/decisions.md`.

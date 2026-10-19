@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "runtime": "squad4cursor",
+  "modelProfile": "quality",
+  "createdBy": "s4c",
+  "compat": {
+    "bradySquad": true,
+    "cursor": true,
+    "copilot": true
+  }
+}
